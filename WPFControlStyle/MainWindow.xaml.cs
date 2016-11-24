@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,31 @@ namespace WPFControlStyle
         public MainWindow()
         {
             InitializeComponent();
+            data = StatusCollectionClass.Create();
+            this.lsitBox.ItemsSource = data;
+            seleStr = this.lsitBox.SelectedItem as string;
         }
+
+        private ObservableCollection<string> data;
+
+        public string seleStr;
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = e.OriginalSource as Button;
+            string str = btn.Tag as string;
+
+            data.Remove(seleStr);
+        }
+    }
+
+    public class StatusCollectionClass
+    {
+        public static ObservableCollection<string> Create()
+        {
+            return new ObservableCollection<string>() {
+                "在航", "锚泊", "失控", "操作受限", "吃水受限", "靠泊", "从事捕鱼", "靠帆船提供动力", "预留1", "预留2" };
+        }
+
     }
 }
