@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAO;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -35,20 +36,33 @@ namespace WPFControlStyle
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            Button btn = e.OriginalSource as Button;
-            string str = btn.Tag as string;
+            //Button btn = e.OriginalSource as Button;
+            //string str = btn.Tag as string;
 
-            data.Remove(seleStr);
+            //data.Remove(str);
+           NhibernateBase.Init();
         }
+
+
     }
+
+
 
     public class StatusCollectionClass
     {
         public static ObservableCollection<string> Create()
         {
             return new ObservableCollection<string>() {
-                "在航", "锚泊", "失控", "操作受限", "吃水受限", "靠泊", "从事捕鱼", "靠帆船提供动力", "预留1", "预留2" };
+                "在航", "锚泊", 
+                "失控", "操作受限", 
+                "吃水受限", "靠泊",
+                "从事捕鱼", 
+                "靠帆船提供动力",
+                "预留1", "预留2" };
         }
 
     }
+
+
+
 }
