@@ -38,6 +38,10 @@ namespace WPFControlStyle
             Button btn = e.OriginalSource as Button;
             string str = btn.Tag as string;
 
+
+
+
+
             data.Remove(seleStr);
         }
     }
