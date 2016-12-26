@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFControlStyle", "WPFControlStyle\WPFControlStyle.csproj", "{4B8C133F-76BE-4ABB-95BA-4486A0D2F15D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{56D0CFC9-BC95-4443-95E4-945F9A8F05AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4B8C133F-76BE-4ABB-95BA-4486A0D2F15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B8C133F-76BE-4ABB-95BA-4486A0D2F15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B8C133F-76BE-4ABB-95BA-4486A0D2F15D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D0CFC9-BC95-4443-95E4-945F9A8F05AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D0CFC9-BC95-4443-95E4-945F9A8F05AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D0CFC9-BC95-4443-95E4-945F9A8F05AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D0CFC9-BC95-4443-95E4-945F9A8F05AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

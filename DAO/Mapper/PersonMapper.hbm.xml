@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DAO"
+                    namespace="DAO.Model">
+  <class name="DAO.Model.Person,DAO" table="PERSON" lazy="false">
+    <id name="Id" column="Id" type="System.Int32">
+    </id>
+    <property name="Name" column="Name"/>
+    <property name="Address" column="Address"/>
+  </class>
+</hibernate-mapping>
