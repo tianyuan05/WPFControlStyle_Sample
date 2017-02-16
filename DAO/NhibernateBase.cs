@@ -37,7 +37,7 @@ namespace DAO
                 //var loadCustomer = session.Load<Person>("luge");
                 //session.Delete(loadCustomer);
                 //session.Flush();
-
+// 测试主修该 ，forer变化
             }
 
         }
