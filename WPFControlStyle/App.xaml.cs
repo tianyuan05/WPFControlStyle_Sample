@@ -13,5 +13,6 @@ namespace WPFControlStyle
     /// </summary>
     public partial class App : Application
     {
+    // Test
     }
 }
