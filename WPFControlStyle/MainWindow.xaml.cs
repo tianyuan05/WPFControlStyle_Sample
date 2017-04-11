@@ -40,6 +40,7 @@ namespace WPFControlStyle
             //string str = btn.Tag as string;
 
             //data.Remove(str);
+			MessageBox.Show("Test SourceTree");
            NhibernateBase.Init();
         }
 
